@@ -1,0 +1,30 @@
+<go typeshortname = "log" typename = "Logger" description = "Red agua - Logger" zoomlevel = "15" >
+	<datalist>
+		<datasheet name = "@logBase" tap = "DATOS" > </datasheet>
+		<datasheet name = "@imagenes" tap = "IMAGENES" > </datasheet>
+		<datasheet name = "@mantio" tap = "MANTENIMIENTO" > </datasheet>
+	</datalist>
+
+	<object>
+		<common isicon = "true" iconsize = "10.0" minzoomlevel = "15">
+
+			<behaviours>
+				<behaviour name = "intersectionOfAuxiliarLines" />
+				<behaviour name = "intersectionOf" objecttypes = "gc/a" cutnodes = "true" />
+				<behaviour name = "alignToAuxiliarLine" />
+				<behaviour name = "alignTo" objecttypes = "gc/a" cutnodes = "true" />
+			</behaviours>
+
+			<nodes>
+				<node name = "1" point = "0,0" connectto = "gc/a" color = "0,255,0" scale = "1" />
+			</nodes>
+
+			<graphics scale = "1.0" color = "0,94,193,1.0" backcolor = "0,94,193,0.5" width = "3.0" >
+				<part type = "circle" center = "0,0" radius = "2" />
+				<part type = "line" from = "2.5,2.5" to = "-2.5,-2.5" />
+			</graphics>
+			
+		</common>
+	</object>
+
+</go>
